@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BXML_ELEMENTNODE_
+#define _BXML_ELEMENTNODE_
 
 #include "Node.h"
 #include "CustomTypes.h"
@@ -21,6 +22,7 @@ public:
 
 public:
 	std::wstring* toXml();
+	std::wstring* getName();
 
 protected:
 	uint16 DependencyId;
@@ -30,3 +32,5 @@ protected:
 };
 
 }
+
+#endif

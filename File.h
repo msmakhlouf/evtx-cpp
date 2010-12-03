@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _EVTX_FILE_
+#define _EVTX_FILE_
 
 #include "DataTypes.h"
 #include "Header.h"
@@ -38,3 +39,5 @@ protected:
 };
 
 }
+
+#endif

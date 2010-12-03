@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _EVTX_CHUNK_
+#define _EVTX_CHUNK_
 
 #include "DataTypes.h"
 #include "Record.h"
@@ -71,3 +72,5 @@ public:
 };
 
 }
+
+#endif

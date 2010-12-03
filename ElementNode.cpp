@@ -62,8 +62,8 @@ std::wstring* ElementNode::toXml() {
 				xmlStream << (*attrListXml);
 			}
 
-			for (size_t i=0, size = childNodes->size(); i<size; i++) {
-				std::wstring* nodeXml = (*childNodes)[i]->toXml();
+			for (Node* node = getFirstChild(); nextChildExists(); node = getNextChild()) {
+				std::wstring* nodeXml = node->toXml();
 				xmlStream << (*nodeXml);
 			}
 		}
@@ -72,5 +72,10 @@ std::wstring* ElementNode::toXml() {
 	}
 	return Xml;
 }
+
+std::wstring* ElementNode::getName() {
+	return name->toXml();
+}
+
 
 }

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BXML_ATTRIBUTELIST_
+#define _BXML_ATTRIBUTELIST_
 
 #include "Attribute.h"
 #include "CustomTypes.h"
@@ -34,3 +35,5 @@ private:
 };
 
 }
+
+#endif

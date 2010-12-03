@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BXML_ENTITYREFNODE_
+#define _BXML_ENTITYREFNODE_
 
 #include "CustomTypes.h"
 #include "Node.h"
@@ -24,3 +25,5 @@ protected:
 };
 
 }
+
+#endif

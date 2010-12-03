@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _EVTX_RECORD_
+#define _EVTX_RECORD_
 
 #include "DataTypes.h"
 #include <windows.h>
@@ -44,3 +45,5 @@ public:
 };
 
 }
+
+#endif

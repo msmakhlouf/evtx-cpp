@@ -1,7 +1,5 @@
-#include "Tokens.h"
 #include "Node.h"
-#include "FragmentNode.h"
-#include "ElementNode.h"
+#include "Tokens.h"
 #include "ValueTextNode.h"
 #include "CDATASectionNode.h"
 #include "CharRefNode.h"
@@ -9,6 +7,8 @@
 #include "CloseStartElementNode.h"
 #include "CloseEmptyElementNode.h"
 #include "EndElementNode.h"
+#include "ElementNode.h"
+#include "FragmentNode.h"
 
 namespace Bxml {
 
@@ -31,7 +31,7 @@ Node::~Node(void)
 	delete childNodes;
 }
 
-Node* Node::createNode(char *data, size_t length, Context context) {
+Node* Node::createNode(char *data, size_t length, Context context, Node* parent) {
 	if (length == 0) {
 		return NULL;
 	}
@@ -53,7 +53,7 @@ Node* Node::createNode(char *data, size_t length, Context context) {
 			node = new CloseEmptyElementNode(data, length);
 			break;
 		case EndElement:
-			node = new EndElementNode(data, length);
+			node = new EndElementNode(data, length, parent);
 			break;
 		case ValueText:
 		case ValueTextLast:
@@ -94,6 +94,20 @@ size_t Node::getSize() {
 
 bool Node::isLast() {
 	return last;
+}
+
+Node* Node::getFirstChild() {
+	currentChild = childNodes->begin();
+	return *currentChild;
+}
+
+Node* Node::getNextChild() {
+	currentChild++;
+	return *currentChild;
+}
+
+bool Node::nextChildExists() {
+	return currentChild != childNodes->end();
 }
 
 }

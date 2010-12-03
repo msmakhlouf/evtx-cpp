@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BXML_NAME_
+#define _BXML_NAME_
 
 #include "CustomTypes.h"
 
@@ -25,3 +26,5 @@ protected:
 };
 
 }
+
+#endif

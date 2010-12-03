@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BXML_ATTRIBUTE_
+#define _BXML_ATTRIBUTE_
 
 #include "Name.h"
 #include "Node.h"
@@ -28,3 +29,5 @@ protected:
 };
 
 }
+
+#endif

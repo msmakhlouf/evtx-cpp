@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _EVTX_DATATYPES_
+#define _EVTX_DATATYPES_
 
 #include "CustomTypes.h"
 
@@ -38,3 +39,5 @@ namespace Evtx {
 		HexInt64Array = 0x95	// array of HexInt64
 	};
 }
+
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _EVTX_HEADER_
+#define _EVTX_HEADER_
 
 #include "DataTypes.h"
 
@@ -59,3 +60,5 @@ public:
 };
 
 }
+
+#endif

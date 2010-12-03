@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BXML_TOKENS_
+#define _BXML_TOKENS_
 
 namespace Bxml {
 
@@ -28,3 +29,5 @@ namespace Bxml {
 	};
 
 }
+
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BXML_CLOSEEMPTYELEMENTNODE_
+#define _BXML_CLOSEEMPTYELEMENTNODE_
 
 #include "Node.h"
 
@@ -17,3 +18,5 @@ public:
 };
 
 }
+
+#endif

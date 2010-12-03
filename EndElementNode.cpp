@@ -2,12 +2,15 @@
 
 #include "CustomTypes.h"
 
+#include <sstream>
+
 namespace Bxml {
 
-EndElementNode::EndElementNode(char* data, size_t length) :
+EndElementNode::EndElementNode(char* data, size_t length, Node* parent) :
 	Node(data, length)
 {
 	size += sizeof byte;
+	this->parent = (ElementNode*) parent;
 }
 
 EndElementNode::~EndElementNode(void)
@@ -16,7 +19,12 @@ EndElementNode::~EndElementNode(void)
 
 std::wstring* EndElementNode::toXml() {
 	if (Xml == NULL) {
-		Xml = new std::wstring();
+		std::wstringstream xmlStream;
+		
+		std::wstring* elementName = parent->getName();
+		xmlStream << L"</" << (*elementName) << L">";
+
+		Xml = new std::wstring(xmlStream.str());
 	}
 	return Xml;
 }

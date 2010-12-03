@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BXML_VALUETEXTNODE_
+#define _BXML_VALUETEXTNODE_
 
 #include "Node.h"
 #include "CustomTypes.h"
@@ -24,3 +25,5 @@ protected:
 };
 
 }
+
+#endif

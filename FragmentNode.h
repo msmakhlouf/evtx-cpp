@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BXML_FRAGMENTNODE_
+#define _BXML_FRAGMENTNODE_
 
 #include "Node.h"
 
@@ -21,3 +22,5 @@ private:
 };
 
 }
+
+#endif

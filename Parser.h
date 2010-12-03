@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BXML_PARSER_
+#define _BXML_PARSER_
 
 namespace Bxml {
 
@@ -11,3 +12,5 @@ public:
 };
 
 }
+
+#endif

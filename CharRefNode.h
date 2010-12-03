@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BXML_CHARREFNODE_
+#define _BXML_CHARREFNODE_
 
 #include "CustomTypes.h"
 #include "Node.h"
@@ -21,3 +22,5 @@ protected:
 };
 
 }
+
+#endif

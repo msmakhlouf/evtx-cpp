@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _BXML_CLOSESTARTELMENTNODE_
+#define _BXML_CLOSESTARTELMENTNODE_
 
 #include "Node.h"
 #include <string>
@@ -18,3 +19,5 @@ public:
 };
 
 }
+
+#endif
