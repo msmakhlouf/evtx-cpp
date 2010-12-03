@@ -13,7 +13,7 @@ namespace Bxml {
 		ValueTextLast = 0x05,
 		ValueText = 0x45,
 		AttributeLast = 0x06,
-		Attribute = 0x46,
+		AttributeToken = 0x46,
 		CDATASectionLast = 0x07,
 		CDATASection = 0x47,
 		CharRefLast = 0x08,
