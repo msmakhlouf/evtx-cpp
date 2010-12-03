@@ -25,7 +25,7 @@ Node::~Node(void)
 	if (Xml != NULL) {
 		delete Xml;
 	}
-	for (size_t i=0, size=childNodes->size(); i<size; ++i) {
+	for (size_t i=0, _size=childNodes->size(); i<_size; ++i) {
 		delete (*childNodes)[i];
 	}
 	delete childNodes;
