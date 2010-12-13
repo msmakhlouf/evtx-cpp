@@ -254,6 +254,18 @@
 					>
 				</File>
 				<File
+					RelativePath=".\TemplateDef.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\TemplateInstanceData.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\TemplateInstanceNode.cpp"
+					>
+				</File>
+				<File
 					RelativePath=".\ValueTextNode.cpp"
 					>
 				</File>
@@ -308,6 +320,10 @@
 					>
 				</File>
 				<File
+					RelativePath=".\BxmlConstants.h"
+					>
+				</File>
+				<File
 					RelativePath=".\CDATASectionNode.h"
 					>
 				</File>
@@ -349,6 +365,18 @@
 				</File>
 				<File
 					RelativePath=".\Parser.h"
+					>
+				</File>
+				<File
+					RelativePath=".\TemplateDef.h"
+					>
+				</File>
+				<File
+					RelativePath=".\TemplateInstanceData.h"
+					>
+				</File>
+				<File
+					RelativePath=".\TemplateInstanceNode.h"
 					>
 				</File>
 				<File

@@ -6,11 +6,6 @@
 #include "Name.h"
 #include "AttributeList.h"
 
-#define DEP_NO_DEPENDENCY	0xffff
-
-#define ATTR_NO_ATTRIBUTES	false
-#define ATTR_HAS_ATTRIBUTES	true
-
 namespace Bxml {
 
 class ElementNode :

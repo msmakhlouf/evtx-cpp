@@ -48,7 +48,6 @@ std::wstring* ElementNode::toXml() {
 	if (Xml == NULL) {
 		std::wstringstream xmlStream;
 
-		// TODO: add some code here :)
 		if (DependencyId != DEP_NO_DEPENDENCY /* && NULL optional substitution exists */) {
 			// TODO: do not emit anything
 		}

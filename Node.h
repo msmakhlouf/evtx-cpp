@@ -4,6 +4,8 @@
 #include <vector>
 #include <string>
 
+#include "BxmlConstants.h"
+
 namespace Bxml {
 
 class Node
