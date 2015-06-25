@@ -1,0 +1,1 @@
+Main goal of this project is to provide a set of classes which may be used to parse EVTX files and to translate them into XML representation.
